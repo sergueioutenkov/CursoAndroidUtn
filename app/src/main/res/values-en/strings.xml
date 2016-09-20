@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_click_me">Click Me!</string>
+    <string name="label_default_greeting">Hello World!</string>
+    <string name="label_user_greeting">Hello User!</string>
+</resources>

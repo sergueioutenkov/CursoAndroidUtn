@@ -10,7 +10,16 @@
     tools:context="com.serguei.cursos.cursoandroidutn.MainActivity">
 
     <TextView
+        android:id="@+id/greeting_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textSize="32sp"
+        android:text="@string/label_default_greeting" />
+
+    <Button
+        android:id="@+id/click_me_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_click_me"
+        android:layout_below="@id/greeting_label"/>
 </RelativeLayout>
