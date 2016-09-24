@@ -1,2 +1,7 @@
-# CursoAndroidUtn
-Repositorio modelo para el curso de Android en la UTN FRM
+# Código correspondiente a lo visto en la segunda clase (24/09/2016)
+
+* LinearLayout
+* RelativeLayout
+* Localización por medio de directivas
+* Importación de Imágenes
+* SVGs

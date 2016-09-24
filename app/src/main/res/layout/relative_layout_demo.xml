@@ -30,9 +30,26 @@
         android:hint="@string/time_hint" />
 
     <Button
-        android:layout_width="96dp"
+        android:id="@+id/guardar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_below="@id/hora"
+        android:drawableLeft="@drawable/ic_save"
         android:text="@string/save_button_text" />
+
+    <ImageView
+        android:id="@+id/pikachu"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/guardar"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pikachu" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pikachu"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_home" />
 </RelativeLayout>
