@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Linear Layout -->
+    <string name="recipient_hint">For</string>
+    <string name="subject_hint">Subject</string>
+    <string name="message_hint">Message</string>
+    <string name="send_button_text">Send</string>
+
+    <!-- Relative Layout -->
+    <string name="reminder_hint">Recordatorio</string>
+    <string name="date_hint">Date</string>
+    <string name="time_hint">Time</string>
+    <string name="save_button_text">Save</string>
+</resources>

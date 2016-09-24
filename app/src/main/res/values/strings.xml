@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">CursoAndroidUtn</string>
+
+    <!-- Linear Layout -->
+    <string name="recipient_hint">Para</string>
+    <string name="subject_hint">Asunto</string>
+    <string name="message_hint">Mensaje</string>
+    <string name="send_button_text">Enviar</string>
+
+    <!-- Relative Layout -->
+    <string name="reminder_hint">Recordatorio</string>
+    <string name="date_hint">Fecha</string>
+    <string name="time_hint">Hora</string>
+    <string name="save_button_text">Guardar</string>
 </resources>
