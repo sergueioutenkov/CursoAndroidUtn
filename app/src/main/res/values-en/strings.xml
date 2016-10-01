@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Login Activity-->
+    <string name="login_user_hint_text">User</string>
+    <string name="login_user_hint_password">Password</string>
+    <string name="login_user_error_text">User name can\'t be empty</string>
+    <string name="login_password_error_text">Password must have more than 3 characters</string>
+
+
+    <!--Data activity-->
+    <string name="data_welcome_message">Welcome %1$s, please complete the following:</string>
+    <string name="data_name_hint_text">Name</string>
+    <string name="data_lastname_hint_text">Lastname</string>
+    <string name="data_address_hint_text">Address</string>
+    <string name="data_save_button_text">Save</string>
+    <string name="hello_message_text">Hi %1$s !</string>
+
+</resources>

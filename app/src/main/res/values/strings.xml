@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">CursoAndroidUtn</string>
+
+    <!--Login Activity-->
+    <string name="login_user_hint_text">Usuario</string>
+    <string name="login_user_hint_password">Contraseña</string>
+    <string name="login_user_error_text">El usuario no puede ser vacio</string>
+    <string name="login_password_error_text">La contraseña debe tener mas de 3 caracteres</string>
+
+    <!--Data Activity-->
+    <string name="data_welcome_message">Bienvenido %1$s, por favor completa tus datos!</string>
+    <string name="data_name_hint_text">Nombre</string>
+    <string name="data_lastname_hint_text">Apellido</string>
+    <string name="data_address_hint_text">Direccion</string>
+    <string name="data_save_button_text">Guardar</string>
+
+    <!--Main Activity-->
+    <string name="hello_message_text">Hola %1$s !</string>
+
+    <!--Shared prefs-->
+    <string name="shared_prefs_name">sharedPrefs</string>
+    <string name="saved_name">savedName</string>
+    <string name="saved_lastname">savedLastName</string>
+    <string name="saved_login_status">savedLoginStatus</string>
+
 </resources>
