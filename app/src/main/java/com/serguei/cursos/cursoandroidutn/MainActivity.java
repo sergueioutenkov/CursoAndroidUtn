@@ -1,7 +1,9 @@
 package com.serguei.cursos.cursoandroidutn;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.serguei.catmeter.R;
 
 public class MainActivity extends AppCompatActivity {
 
