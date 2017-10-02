@@ -1,4 +1,3 @@
-# Quinta Clase
 * WebServices
 * Retrofit
 * Picasso
