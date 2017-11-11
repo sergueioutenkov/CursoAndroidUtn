@@ -91,7 +91,7 @@ public class CatFactsListActivity extends AppCompatActivity {
             public void onResponse(Call<CatFactsResponse> call, Response<CatFactsResponse> response) {
 
                 //Cuando obtenemos la respuesta, populamos el adapter
-                CatFactsAdapter adapter = new CatFactsAdapter(response.body().facts, CatFactsListActivity.this);
+                CatFactsAdapter adapter = new CatFactsAdapter(response.body().data, CatFactsListActivity.this);
                 recyclerView.setAdapter(adapter);
 
                 //Mostrar el recycler view, ocultar el loading

@@ -9,7 +9,7 @@ import retrofit2.http.Query;
 public interface CatFactsAPI {
 
     //URL base de nuestra API
-    String ENDPOINT = "http://catfacts-api.appspot.com/api/";
+    String ENDPOINT = "https://catfact.ninja/";
 
     /**
      * Método que obtiene la lista de curiosidades de los gatos
@@ -19,5 +19,5 @@ public interface CatFactsAPI {
      * @return
      */
     @GET("facts")
-    Call<CatFactsResponse> getCatFacts(@Query("number") int number);
+    Call<CatFactsResponse> getCatFacts(@Query("limit") int number);
 }

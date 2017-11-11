@@ -6,5 +6,9 @@ import java.util.List;
  * Clase que representa el modelo obtenido de la API
  */
 public class CatFactsResponse {
-    public List<String> facts;
+    public List<CatFact> data;
+
+    public static class CatFact{
+        public String fact;
+    }
 }

@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.serguei.catmeter.R;
 import com.serguei.catmeter.catfactdetail.CatFactDetailActivity;
+import com.serguei.catmeter.catfactslist.model.CatFactsResponse;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -23,16 +24,16 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 
 public class CatFactsAdapter extends RecyclerView.Adapter {
-    List<String> catFacts;
+    List<CatFactsResponse.CatFact> catFacts;
     List<String> catImagesURLs = new ArrayList<>();
     Context context;
 
-    public CatFactsAdapter(List<String> catFacts, Context context) {
+    public CatFactsAdapter(List<CatFactsResponse.CatFact> catFacts, Context context) {
         this.catFacts = catFacts;
         this.context = context;
 
         //Por cada fact, generamos una URL
-        for (String fact : catFacts) {
+        for (CatFactsResponse.CatFact fact : catFacts) {
 
             //Generamos un ID random en un rango
             int min = 300;
@@ -42,7 +43,7 @@ public class CatFactsAdapter extends RecyclerView.Adapter {
             int height = r.nextInt(max - min + 1) + min;
 
             //Url de la imagen
-            String imageURL = "https://placekitten.com/" + width + "/" + height;
+            String imageURL = "https://loremflickr.com/" + width + "/" + height;
             catImagesURLs.add(imageURL);
         }
     }
@@ -58,7 +59,7 @@ public class CatFactsAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
 
         //Obtenemos el fact y la URL de la imagen
-        final String catFact = catFacts.get(position);
+        final String catFact = catFacts.get(position).fact;
         final String catImageURL = catImagesURLs.get(position);
 
         final CatFactViewHolder viewHolder = (CatFactViewHolder) holder;
@@ -87,7 +88,7 @@ public class CatFactsAdapter extends RecyclerView.Adapter {
                 ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation((CatFactsListActivity) context, viewHolder.catFactImageView, transitionName);
 
                 //Realizamos la transicion
-                ActivityCompat.startActivity((CatFactsListActivity) context, intent, options.toBundle());
+                ActivityCompat.startActivity(context, intent, options.toBundle());
             }
         });
     }
@@ -103,7 +104,7 @@ public class CatFactsAdapter extends RecyclerView.Adapter {
         CircleImageView catFactImageView;
         TextView catFactTextView;
 
-        public CatFactViewHolder(View itemView) {
+        CatFactViewHolder(View itemView) {
             super(itemView);
 
             container = (RelativeLayout) itemView.findViewById(R.id.container);
